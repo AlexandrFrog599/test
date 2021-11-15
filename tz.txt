@@ -1,0 +1,66 @@
+composer create-project --prefer-dist laravel/laravel test
+cd test
+composer require laravelcollective/html
+composer require doctrine/dbal
+composer require intervention/image
+composer require barryvdh/laravel-debugbar --dev
+cd domains/test
+
+echo "# tz" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin git@github.com:AlexandrFrog599/tz.git
+git push -u origin main
+
+git remote add origin git@github.com:AlexandrFrog599/tz.git
+git branch -M main
+git push -u origin main
+
+git --version
+git --help
+git init
+
+frogsasa599@gmail.com
+123321LKO123321ZXC
+AlexandrFrog599
+
+git config --global user.name "AlexandrFrog599"
+git config --global user.email "frogsasa599@gmail.com"
+
+git status
+git add .
+git commit -m "Installed Laravel"
+git remote add origin git@github.com:AlexandrFrog599/tz.git
+git remote add origin https://github.com/AlexandrFrog599/tz.git
+git remote remove origin
+
+git push -u origin master
+git push -u origin main
+
+
+
+php artisan make:migration create_companies_table
+php artisan make:model Models\Company
+php artisan make:controller Admin\CompanyController -r
+
+php artisan make:migration create_employees_table
+php artisan make:model Models\Employee
+php artisan make:controller Admin\EmployeeController -r
+php artisan make:controller HomeController
+
+php artisan make:seeder CompaniesTableSeeder
+
+php artisan migrate
+php artisan db:seed
+
+php artisan make:request CompanyRequest
+php artisan make:request EmployeeRequest
+php artisan make: auth
+php artisan storage:link
+
+php artisan vendor:publish --tag=laravel-pagination
+php artisan vendor:publish
+
+php artisan make:provider PaginationServiceProvider
