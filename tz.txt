@@ -33,12 +33,14 @@ git status
 git add .
 git commit -m "Installed Laravel"
 git remote add origin git@github.com:AlexandrFrog599/tz.git
-git remote add origin https://github.com/AlexandrFrog599/tz.git
+git remote add origin https://github.com/AlexandrFrog599/test.git
 git remote remove origin
 
 git push -u origin master
 git push -u origin main
 
+git commit -m "create companies table, model and controller"
+git commit -m "create employee table, model and controller"
 
 
 php artisan make:migration create_companies_table
