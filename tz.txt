@@ -41,7 +41,8 @@ git push -u origin main
 
 git commit -m "create companies table, model and controller"
 git commit -m "create employee table, model and controller"
-
+git commit -m "update  migrations"
+git push
 
 php artisan make:migration create_companies_table
 php artisan make:model Models\Company
