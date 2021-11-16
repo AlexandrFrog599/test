@@ -1,10 +1,9 @@
 <?php
-
- use Illuminate\Database\Seeder;
+use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 
 use Faker\Factory as Faker;
-
+ 
 
 class DatabaseSeeder extends Seeder
 {
@@ -23,7 +22,7 @@ class DatabaseSeeder extends Seeder
             'updated_at' => date('Y-m-d H:i:s'),
         ]);
         $this->call(CompaniesTableSeeder::class);
-
+        
 		$faker = Faker::create('ru_RU');
         for ($i=0; $i < 100 ; $i++) {
             $employees[] = [
@@ -34,6 +33,6 @@ class DatabaseSeeder extends Seeder
 	            'phone' => $faker->phoneNumber,            	
             ];
         }
-        DB::table('employees')->insert($employees);
+        \DB::table('employees')->insert($employees);
    	}
 }

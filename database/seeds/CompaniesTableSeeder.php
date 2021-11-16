@@ -9,8 +9,7 @@ class CompaniesTableSeeder extends Seeder
      *
      * @return void
      */
-    public function run()
-    {
+    public function run()    {
         for ($i=0; $i < 10; $i++) {
             $cName = 'Компания '.$i;
             $companies[] = [
@@ -21,6 +20,7 @@ class CompaniesTableSeeder extends Seeder
                 // 'logo' => Str::random(10).'.jpg',
             ];
         }
-    \DB::table('companies')->insert($companies);
+        \DB::table('companies')->insert($companies);
     }
+
 }
